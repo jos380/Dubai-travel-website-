@@ -1,62 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Attractions — Dubai</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<title>Dubai Attractions</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
-<body class="theme">
-  <header class="site-header">
-    <div class="brand"><a href="index.html">Explore<span>Dubai</span></a></div>
-    <button id="navToggle" class="nav-toggle">☰</button>
-    <nav id="mainNav" class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="attractions.html">Attractions</a>
-      <a href="accommodations.html">Accommodations</a>
-      <a href="lifestyle.html">Lifestyle</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main class="container reveal">
-    <section class="page-header">
-      <h1>Must-Visit Attractions</h1>
-      <p class="muted">Handpicked attractions with quick tips and what to expect.</p>
-    </section>
+<body>
 
-    <section class="attractions-grid">
-      <article class="attraction reveal">
-        <img src="/mnt/data/dubai_site/images/burj-khalifa.jpg" alt="Burj Khalifa">
-        <div>
-          <h3>Burj Khalifa</h3>
-          <p>Visit the At The Top observation decks for panoramic views. Pre-book tickets to avoid queues.</p>
-        </div>
-      </article>
+<nav class="navbar">
+  <div class="logo">DubaiX</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="attractions.html">Attractions</a></li>
+    <li><a href="accommodations.html">Accommodations</a></li>
+    <li><a href="lifestyle.html">Lifestyle</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-      <article class="attraction reveal">
-        <img src="/mnt/data/dubai_site/images/dubai-marina.jpg" alt="Dubai Marina">
-        <div>
-          <h3>Dubai Marina</h3>
-          <p>Evening promenades, dining and yacht tours. Great for nightlife and sunset photos.</p>
-        </div>
-      </article>
+<header class="sub-hero">
+  <h1>Top Dubai Attractions</h1>
+</header>
 
-      <article class="attraction reveal">
-        <img src="/mnt/data/dubai_site/images/dubai-desert.jpg" alt="Desert">
-        <div>
-          <h3>Desert Safari</h3>
-          <p>Dune bashing, camel rides and traditional entertainment at desert camps. Bring sun protection and closed shoes.</p>
-        </div>
-      </article>
-    </section>
-  </main>
+<section class="section">
+  <h2 class="section-title">Must-See Places</h2>
 
-  <footer class="site-footer">
-    <div>© <span id="year"></span> Explore Dubai</div>
-    <div class="footer-links"><a href="#">Instagram</a> · <a href="#">Facebook</a></div>
-  </footer>
+  <div class="image-grid">
+    <div class="card reveal">
+      <img src="images/burj-khalifa.jpg" alt="">
+      <h3>Burj Khalifa</h3>
+      <p>The world’s tallest building with unmatched views.</p>
+    </div>
+
+    <div class="card reveal">
+      <img src="images/dubai-marina.jpg" alt="">
+      <h3>Dubai Marina</h3>
+      <p>A futuristic waterfront lined with skyscrapers.</p>
+    </div>
+
+    <div class="card reveal">
+      <img src="images/dubai-desert.jpg" alt="">
+      <h3>Dubai Desert</h3>
+      <p>Experience safaris, dunes and sunset beauty.</p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
