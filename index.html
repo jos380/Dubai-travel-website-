@@ -1,31 +1,98 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Explore Dubai - Home</title>
-    <link rel='stylesheet' href='style.css'>
-    <script src='script.js' defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore Dubai — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-<body class='hero'>
-    <header>
-        <h1 class='title'>Explore Dubai</h1>
-        <nav>
-            <a href='index.html'>Home</a>
-            <a href='attractions.html'>Attractions</a>
-            <a href='accommodations.html'>Accommodations</a>
-            <a href='lifestyle.html'>Lifestyle</a>
-            <a href='contact.html'>Contact</a>
-        </nav>
-    </header>
-    <section class='intro fade-in'>
-        <h2>Welcome to the Heart of the UAE</h2>
-        <p>Discover the magic, luxury and modern wonders of Dubai.</p>
-        <div class='image-row'>
-            <img src='images/burj-khalifa.jpg' alt='Burj Khalifa'>
-            <img src='images/dubai-marina.jpg' alt='Dubai Marina'>
-            <img src='images/dubai-desert.jpg' alt='Dubai Desert'>
+<body class="page">
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Explore<span>Dubai</span></a>
+    <button id="navToggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="index.html" class="navlink">Home</a>
+      <a href="attractions.html" class="navlink">Attractions</a>
+      <a href="accommodations.html" class="navlink">Accommodations</a>
+      <a href="lifestyle.html" class="navlink">Lifestyle</a>
+      <a href="contact.html" class="navlink">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Discover Dubai — Luxury, Culture & Adventure</h1>
+        <p class="lede">Skyscrapers, golden deserts and waterfront living. Start your perfect journey.</p>
+        <div class="cta">
+          <a class="btn primary" href="attractions.html">Explore Attractions</a>
+          <a class="btn ghost" href="accommodations.html">Find Hotels</a>
         </div>
+      </div>
+
+      <div class="hero-gallery" aria-hidden="true">
+        <img class="hg hg-1" src="images/burj-khalifa.jpg" alt="Burj Khalifa">
+        <img class="hg hg-2" src="images/dubai-marina.jpg" alt="Dubai Marina">
+        <img class="hg hg-3" src="images/dubai-desert.jpg" alt="Dubai Desert">
+      </div>
     </section>
+
+    <section class="features container reveal">
+      <article class="card">
+        <h3>Sky-High Views</h3>
+        <p>Burj Khalifa observation decks — book ahead for sunset slots.</p>
+      </article>
+
+      <article class="card">
+        <h3>Waterfront Living</h3>
+        <p>Marina promenades, yachts, and evening dining with skyline views.</p>
+      </article>
+
+      <article class="card">
+        <h3>Desert Adventures</h3>
+        <p>Dune drives, camel rides and luxury desert dining under the stars.</p>
+      </article>
+    </section>
+
+    <section class="gallery container reveal" id="highlights">
+      <h2>Highlights</h2>
+      <div class="grid">
+        <figure>
+          <img src="images/burj-khalifa.jpg" alt="Burj Khalifa">
+          <figcaption>Burj Khalifa</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dubai-marina.jpg" alt="Dubai Marina">
+          <figcaption>Dubai Marina</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dubai-desert.jpg" alt="Desert Safari">
+          <figcaption>Desert Safari</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="two-col container reveal">
+      <div>
+        <h2>Plan Your Stay</h2>
+        <p class="muted">Browse recommended hotels and neighbourhoods to match your style and budget.</p>
+        <a class="btn primary" href="accommodations.html">See Hotels</a>
+      </div>
+      <div>
+        <h2>Live the Lifestyle</h2>
+        <p class="muted">Dining, wellness, shopping and nightlife — curated for memorable experiences.</p>
+        <a class="btn ghost" href="lifestyle.html">Lifestyle Guide</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Explore Dubai</div>
+    <div class="socials"><a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a></div>
+  </footer>
+
 </body>
 </html>
