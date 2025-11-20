@@ -1,43 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Dubai Lifestyle</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lifestyle — Dubai</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
+<body class="page">
 
-<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Explore<span>Dubai</span></a>
+    <button id="navToggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="index.html" class="navlink">Home</a>
+      <a href="attractions.html" class="navlink">Attractions</a>
+      <a href="accommodations.html" class="navlink">Accommodations</a>
+      <a href="lifestyle.html" class="navlink">Lifestyle</a>
+      <a href="contact.html" class="navlink">Contact</a>
+    </nav>
+  </header>
 
-<nav class="navbar">
-  <div class="logo">DubaiX</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="attractions.html">Attractions</a></li>
-    <li><a href="accommodations.html">Accommodations</a></li>
-    <li><a href="lifestyle.html">Lifestyle</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <main class="container content reveal">
+    <header class="page-head">
+      <h1>Dubai Lifestyle</h1>
+      <p class="muted">Shopping, dining, wellness and entertainment — curated tips and highlights.</p>
+    </header>
 
-<header class="sub-hero">
-  <h1>Dubai Lifestyle</h1>
-</header>
+    <section class="lifestyle-grid">
+      <div class="lifestyle-box reveal">
+        <h3>Shopping & Malls</h3>
+        <p>Dubai Mall, Mall of the Emirates and unique souks — something for everyone.</p>
+      </div>
 
-<section class="section">
-  <h2 class="section-title">Luxury Living</h2>
+      <div class="lifestyle-box reveal">
+        <h3>Fine Dining and Cafés</h3>
+        <p>World-class chefs, rooftop dining and beachside restaurants for all tastes.</p>
+      </div>
 
-  <div class="image-grid">
-    <img src="images/dubai-marina.jpg" class="reveal">
-    <img src="images/burj-khalifa.jpg" class="reveal">
-    <img src="images/dubai-desert.jpg" class="reveal">
-  </div>
+      <div class="lifestyle-box reveal">
+        <h3>Wellness & Spas</h3>
+        <p>Luxury spas, wellness retreats and beach clubs for relaxation and fitness.</p>
+      </div>
 
-  <p class="text">
-    Dubai offers world-class shopping, dining, nightlife, luxury hotels,
-    futuristic architecture and a vibrant cosmopolitan lifestyle.
-  </p>
-</section>
+      <div class="lifestyle-box reveal">
+        <h3>Nightlife & Entertainment</h3>
+        <p>Rooftop bars, beach clubs, and live shows make Dubai's night scene unforgettable.</p>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Explore Dubai</div>
+  </footer>
 </body>
 </html>
